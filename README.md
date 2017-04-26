@@ -1,6 +1,6 @@
 # PetCare
 
-A simple chat box where people can chat/shout together in a group.
+A simple responsive website where animal lovers and pet keepers can find all they need straing from pet food, doctor appointments, gadgets and stuffs.
 
   - One stop for all your pet soultions.
   - Latest Material Design and uses Ajax. 
