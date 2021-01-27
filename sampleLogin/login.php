@@ -32,8 +32,8 @@
 		<?php
 			if(isset($_POST['login']))
 			{
-				@$username=$_POST['username'];
-				@$password=$_POST['password'];
+				$username=$_POST['username'];
+				$password=$_POST['password'];
 				$password = md5($password);
 				$query = "select * from user where username='$username' and password='$password' ";
 				//echo $query;
