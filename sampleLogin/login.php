@@ -32,12 +32,13 @@
 		<?php
 			if(isset($_POST['login']))
 			{
-				@$username=$_POST['username'];
-				@$password=$_POST['password'];
+				$username=$_POST['username'];
+				$password=$_POST['password'];
 				$password = md5($password);
-				$query = "select * from user where username='$username' and password='$password' ";
+				$query = "select * from user where username='".$username."' and password='".$password."' ";
 				//echo $query;
-				$query_run = mysqli_query($con,$query);
+				//$query_run = mysqli_query($con,$query);
+				$query_run = $con->query($query);
 				//echo mysql_num_rows($query_run);
 				if($query_run)
 				{
